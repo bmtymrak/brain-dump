@@ -5,7 +5,7 @@ from notes.models import Note, Tag
 class NoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Note
-        fields = ["content", "tags"]
+        fields = ["content", "tags", "date_created", "date_modified"]
 
 
 class TagSerializer(serializers.ModelSerializer):
