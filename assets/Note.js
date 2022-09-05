@@ -4,7 +4,8 @@ function Note(props){
 
     return(
         <div>
-            <p>{props.note.content}</p>
+                
+            <p>{props.note.content} - Tags - {props.note.tags.map((tag, index) =>(tag.name))}</p>
         </div>
     )
 }

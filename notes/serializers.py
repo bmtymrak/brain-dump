@@ -6,6 +6,7 @@ class NoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Note
         fields = ["content", "tags", "date_created", "date_modified"]
+        depth = 1
 
 
 class TagSerializer(serializers.ModelSerializer):
